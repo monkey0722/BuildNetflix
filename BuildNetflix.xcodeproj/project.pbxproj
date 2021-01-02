@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FABDF4C25A056BC00C29F42 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FABDF4B25A056BC00C29F42 /* KingfisherSwiftUI */; };
 		0FEC33E625A026D200955AC7 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC33E525A026D200955AC7 /* Tests_iOS.swift */; };
 		0FEC33F125A026D200955AC7 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC33F025A026D200955AC7 /* Tests_macOS.swift */; };
 		0FEC33F325A026D200955AC7 /* BuildNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC33CA25A026D100955AC7 /* BuildNetflixApp.swift */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FABDF4C25A056BC00C29F42 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +169,9 @@
 			dependencies = (
 			);
 			name = "BuildNetflix (iOS)";
+			packageProductDependencies = (
+				0FABDF4B25A056BC00C29F42 /* KingfisherSwiftUI */,
+			);
 			productName = "BuildNetflix (iOS)";
 			productReference = 0FEC33D125A026D200955AC7 /* BuildNetflix.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 0FEC33C425A026D100955AC7;
+			packageReferences = (
+				0FABDF4A25A056BC00C29F42 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0FEC33D225A026D200955AC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -686,6 +694,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FABDF4A25A056BC00C29F42 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FABDF4B25A056BC00C29F42 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FABDF4A25A056BC00C29F42 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FEC33C525A026D100955AC7 /* Project object */;
 }
