@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
+		0F3A3F7C25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
 		0FABDF4C25A056BC00C29F42 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FABDF4B25A056BC00C29F42 /* KingfisherSwiftUI */; };
 		0FABDF5225A0571900C29F42 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */; };
 		0FABDF5325A0571900C29F42 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		0FABDF5825A0573700C29F42 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		0FABDF5F25A057A100C29F42 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Shared/HomeView.swift; sourceTree = SOURCE_ROOT; };
@@ -142,6 +145,7 @@
 				0FABDF5825A0573700C29F42 /* HomeVM.swift */,
 				0FABDF6625A057E200C29F42 /* StandardHomeMovie.swift */,
 				0FABDF6D25A0583D00C29F42 /* Movie.swift */,
+				0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 				0FEC33F525A026D200955AC7 /* ContentView.swift in Sources */,
 				0FEC33F325A026D200955AC7 /* BuildNetflixApp.swift in Sources */,
 				0FABDF6025A057A100C29F42 /* HomeView.swift in Sources */,
+				0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */,
 				0FABDF6725A057E200C29F42 /* StandardHomeMovie.swift in Sources */,
 				0FABDF5925A0573700C29F42 /* HomeVM.swift in Sources */,
 			);
@@ -355,6 +360,7 @@
 				0FEC33F625A026D200955AC7 /* ContentView.swift in Sources */,
 				0FEC33F425A026D200955AC7 /* BuildNetflixApp.swift in Sources */,
 				0FABDF6125A057A100C29F42 /* HomeView.swift in Sources */,
+				0F3A3F7C25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */,
 				0FABDF6825A057E200C29F42 /* StandardHomeMovie.swift in Sources */,
 				0FABDF5A25A0573700C29F42 /* HomeVM.swift in Sources */,
 			);
