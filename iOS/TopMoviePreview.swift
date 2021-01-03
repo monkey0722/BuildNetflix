@@ -42,7 +42,11 @@ struct TopMoviePreview: View {
             }
           }
         }
-        Text("Row of buttons")
+        HStack {
+          Text("My List")
+          Text("Play button")
+          Text("Info button")
+        }
       }
     }.foregroundColor(.white)
   }
