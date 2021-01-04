@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
 		0F3A3F7C25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
+		0F81A7D125A33E290076676A /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F81A7D025A33E290076676A /* WhiteButton.swift */; };
 		0FABDF4C25A056BC00C29F42 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FABDF4B25A056BC00C29F42 /* KingfisherSwiftUI */; };
 		0FABDF5225A0571900C29F42 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */; };
 		0FABDF5325A0571900C29F42 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		0F81A7D025A33E290076676A /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		0FABDF5825A0573700C29F42 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		0FABDF5F25A057A100C29F42 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Shared/HomeView.swift; sourceTree = SOURCE_ROOT; };
@@ -150,6 +152,7 @@
 				0FABDF6D25A0583D00C29F42 /* Movie.swift */,
 				0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */,
 				0FD676A925A1B872001689D9 /* SmallVerticalButton.swift */,
+				0F81A7D025A33E290076676A /* WhiteButton.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				0FABDF6725A057E200C29F42 /* StandardHomeMovie.swift in Sources */,
 				0FABDF5925A0573700C29F42 /* HomeVM.swift in Sources */,
 				0FD676AA25A1B872001689D9 /* SmallVerticalButton.swift in Sources */,
+				0F81A7D125A33E290076676A /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
