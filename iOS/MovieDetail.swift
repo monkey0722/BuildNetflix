@@ -28,9 +28,13 @@ struct MovieDetail: View {
             StandardHomeMovie(movie: movie)
               .frame(width: screen.width / 2.5)
             MovieInfoSubHeadline(movie: movie)
+            
+            if movie.promotionHeadline != nil {
+              Text(movie.promotionHeadline!)
+                .bold().font(.headline)
+            }
           }
         }
-        
         Spacer()
       }.foregroundColor(.white)
     }
@@ -46,14 +50,24 @@ struct MovieDetail_Previews: PreviewProvider {
 struct MovieInfoSubHeadline: View {
   var movie: Movie
   var body: some View {
-    HStack {
+    HStack(spacing: 20) {
       Image(systemName: "hand.thumbsup.fill")
-      
-      Text("MOIVE YEAR")
-      Text("RATING")
-      Text("SEAONS")
+      Text(String(movie.yaer))
+      RatingView(rating: movie.rating)
+      Text(movie.numberOfSeasonsDisplay)
     }
     .foregroundColor(.gray)
     .padding(.vertical, 6)
+  }
+}
+
+struct RatingView: View {
+  var rating: String
+  var body: some View {
+    ZStack {
+      Rectangle().foregroundColor(.gray)
+      Text(rating)
+        .foregroundColor(.white).font(.system(size: 12)).bold()
+    }.frame(width: 50, height: 20)
   }
 }
