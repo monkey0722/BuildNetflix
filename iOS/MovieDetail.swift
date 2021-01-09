@@ -33,6 +33,13 @@ struct MovieDetail: View {
               Text(movie.promotionHeadline!)
                 .bold().font(.headline)
             }
+            
+            PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
+              //
+            }.padding(.horizontal, 10)
+
+            CurrentEpisodeInformation(movie: movie)
+            CastInfo(movie: movie)
           }
         }
         Spacer()
@@ -69,5 +76,41 @@ struct RatingView: View {
       Text(rating)
         .foregroundColor(.white).font(.system(size: 12)).bold()
     }.frame(width: 50, height: 20)
+  }
+}
+
+struct CurrentEpisodeInformation: View {
+  var movie: Movie
+  var body: some View {
+    Group {
+      HStack {
+        Text(movie.episodeInfoDisplay).bold()
+        Spacer()
+      }.padding(.vertical, 4)
+      HStack {
+        Text(movie.episodeDescriptionDisplay)
+          .font(.subheadline)
+        Spacer()
+      }
+    }
+  }
+}
+
+struct CastInfo: View {
+  var movie: Movie
+  var body: some View {
+    VStack {
+      HStack {
+        Text("Cast: \(movie.cast)")
+        Spacer()
+      }
+      HStack {
+        Text("Creators: \(movie.creators)")
+        Spacer()
+      }
+    }
+    .font(.caption)
+    .foregroundColor(.gray)
+    .padding(.vertical, 10)
   }
 }
