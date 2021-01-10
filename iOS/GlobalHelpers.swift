@@ -18,7 +18,8 @@ let exampleMovie1 = Movie(
   numberOfSeasons: 1,
   defaultEpisodeInfo: exampleEpisodeInfo1,
   creators: "Baran bo Odan, Jantje Friese",
-  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel"
+  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+  moreLikeThisMovies: []
 )
 let exampleMovie2 = Movie(
   id: UUID().uuidString,
@@ -30,7 +31,8 @@ let exampleMovie2 = Movie(
   numberOfSeasons: 2,
   defaultEpisodeInfo: exampleEpisodeInfo1,
   creators: "Baran bo Odan, Jantje Friese",
-  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel"
+  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+  moreLikeThisMovies: []
 )
 let exampleMovie3 = Movie(
   id: UUID().uuidString,
@@ -42,7 +44,9 @@ let exampleMovie3 = Movie(
   numberOfSeasons: 3,
   defaultEpisodeInfo: exampleEpisodeInfo1,
   creators: "Baran bo Odan, Jantje Friese",
-  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel"
+  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+  moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie5, exampleMovie6],
+  promotionHeadline: "New episode coming soon"
 )
 let exampleMovie4 = Movie(
   id: UUID().uuidString,
@@ -54,7 +58,8 @@ let exampleMovie4 = Movie(
   numberOfSeasons: 4,
   defaultEpisodeInfo: exampleEpisodeInfo1,
   creators: "Baran bo Odan, Jantje Friese",
-  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel"
+  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+  moreLikeThisMovies: []
 )
 let exampleMovie5 = Movie(
   id: UUID().uuidString,
@@ -66,7 +71,8 @@ let exampleMovie5 = Movie(
   numberOfSeasons: 5,
   defaultEpisodeInfo: exampleEpisodeInfo1,
   creators: "Baran bo Odan, Jantje Friese",
-  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel"
+  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+  moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie6]
 )
 let exampleMovie6 = Movie(
   id: UUID().uuidString,
@@ -78,7 +84,8 @@ let exampleMovie6 = Movie(
   numberOfSeasons: 6,
   defaultEpisodeInfo: exampleEpisodeInfo1,
   creators: "Baran bo Odan, Jantje Friese",
-  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel"
+  cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+  moreLikeThisMovies: []
 )
 
 let exampleEpisodeInfo1 = CurrentEpisodeIngo(
@@ -88,14 +95,9 @@ let exampleEpisodeInfo1 = CurrentEpisodeIngo(
   episode: 1
 )
 
-let exampleMovies: [Movie] = [
-  exampleMovie1,
-  exampleMovie2,
-  exampleMovie3,
-  exampleMovie4,
-  exampleMovie5,
-  exampleMovie6
-]
+var exampleMovies: [Movie] {
+  return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+}
 
 extension LinearGradient {
   static let blackOpacityGradient = LinearGradient(
@@ -113,3 +115,4 @@ extension String {
     return size.width
   }
 }
+
