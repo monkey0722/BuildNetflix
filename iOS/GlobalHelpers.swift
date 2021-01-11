@@ -112,7 +112,16 @@ let exampleMovie6 = Movie(
   trailers: exampleTrailers
 )
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+let exampleEpisodeInfo1 = CurrentEpisodeIngo(
+  episodeName: "Alice in the Land of the Rising Sun",
+  description: "Ryohei Arisu hides in a public restroom with two of his friends to avoid detection by the police. However, when they get out, they find the empty streets of Tokyo.",
+  season: 2,
+  episode: 1
+)
+
+var exampleMovies: [Movie] {
+  return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+}
 
 extension LinearGradient {
   static let blackOpacityGradient = LinearGradient(
@@ -120,4 +129,13 @@ extension LinearGradient {
     startPoint: .top,
     endPoint: .bottom
   )
+}
+
+
+extension String {
+  func widthOfString(usingFont font: UIFont) -> CGFloat {
+    let fontAttributes = [NSAttributedString.Key.font: font]
+    let size = self.size(withAttributes: fontAttributes)
+    return size.width
+  }
 }
