@@ -19,6 +19,6 @@ struct StandardHomeMovie: View {
 
 struct StandardHomeMovie_Previews: PreviewProvider {
   static var previews: some View {
-    StandardHomeMovie(movie: exampleMovie3)
+    StandardHomeMovie(movie: exampleMovie1)
   }
 }
