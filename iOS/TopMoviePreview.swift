@@ -48,7 +48,7 @@ struct TopMoviePreview: View {
             //
           }
           Spacer()
-          WhiteButton(text: "Play", imageName: "play.fill") {
+          PlayButton(text: "Play", imageName: "play.fill") {
             //
           }.frame(width: 120)
           Spacer()
@@ -64,6 +64,6 @@ struct TopMoviePreview: View {
 
 struct TopMoviePreview_Previews: PreviewProvider {
   static var previews: some View {
-    TopMoviePreview(movie: exampleMovie1)
+    TopMoviePreview(movie: exampleMovie3)
   }
 }
