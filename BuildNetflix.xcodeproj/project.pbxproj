@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F0243BB25A5EB9600C47642 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0243BA25A5EB9600C47642 /* HomeView.swift */; };
+		0F13D83A25ADBE3700127713 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F13D83925ADBE3700127713 /* EpisodeView.swift */; };
 		0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
 		0F45861B25A739D400041E95 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F45861A25A739D400041E95 /* MovieDetail.swift */; };
 		0F61EBBD25ABFFB3002251E7 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61EBBC25ABFFB3002251E7 /* Trailer.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		0F0243BA25A5EB9600C47642 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0F13D83925ADBE3700127713 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		0F45861A25A739D400041E95 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		0F61EBBC25ABFFB3002251E7 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				0F69A81D25AC060800732BE1 /* TrailerList.swift */,
 				0F45861A25A739D400041E95 /* MovieDetail.swift */,
 				0FFEE25A25AC194300FDDD38 /* MoreLikeThis.swift */,
+				0F13D83925ADBE3700127713 /* EpisodeView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				0FEC33F325A026D200955AC7 /* BuildNetflixApp.swift in Sources */,
 				0FFEE23C25AC179C00FDDD38 /* Episode.swift in Sources */,
 				0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */,
+				0F13D83A25ADBE3700127713 /* EpisodeView.swift in Sources */,
 				0FABDF6725A057E200C29F42 /* StandardHomeMovie.swift in Sources */,
 				0FABDF5925A0573700C29F42 /* HomeVM.swift in Sources */,
 				0FFEE24725AC184800FDDD38 /* PlayButton.swift in Sources */,

@@ -26,6 +26,68 @@ let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL,
 
 let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 
+let episode1 = Episode(
+  name: "Beginnings",
+  season: 1,
+  episodeNumber: 1,
+  thumbnailImageURLString: "https://picsum.photos/300/102",
+  length: 53,
+  description: "On his first day at a new high school, Park Sae-roi sees a student wielding power and bullying the weak, and decides to act on his beliefs. Oh Soo-ah is about to take the college entrance exam.",
+  videoURL: exampleVideoURL
+)
+
+let episode2 = Episode(
+  name: "Dark Matter",
+  season: 1,
+  episodeNumber: 2,
+  thumbnailImageURLString: "https://picsum.photos/300/103",
+  length: 54,
+  description: "Ordinary people suddenly acquire super powers like superheroes and are swept away by a strange fate. A science fiction drama series that has created a huge sensation in many places.",
+  videoURL: exampleVideoURL
+)
+
+let episode3 = Episode(
+  name: "Ghosts",
+  season: 1,
+  episodeNumber: 3,
+  thumbnailImageURLString: "https://picsum.photos/300/103",
+  length: 55,
+  description: "The U.S. government's decision to spend more money on suppressing communist forces than on extradition treaties, which are more favorable to Pablo's arrest, makes Pablo's arrest even more difficult.",
+  videoURL: exampleVideoURL
+)
+
+let episode4 = Episode(
+  name: "Beginnings 2",
+  season: 2,
+  episodeNumber: 1,
+  thumbnailImageURLString: "https://picsum.photos/300/104",
+  length: 55,
+  description: "On his first day at a new high school, Park Sae-roi sees a student wielding power and bullying the weak, and decides to act on his beliefs. Oh Soo-ah is about to take the college entrance exam.",
+  videoURL: exampleVideoURL
+)
+
+let episode5 = Episode(
+  name: "Dark Matter 2",
+  season: 2,
+  episodeNumber: 2,
+  thumbnailImageURLString: "https://picsum.photos/300/105",
+  length: 56,
+  description: "Ordinary people suddenly acquire super powers like superheroes and are swept away by a strange fate. A science fiction drama series that has created a huge sensation in many places.",
+  videoURL: exampleVideoURL
+)
+
+let episode6 = Episode(
+  name: "Ghosts 2",
+  season: 2,
+  episodeNumber: 3,
+  thumbnailImageURLString: "https://picsum.photos/300/106",
+  length: 56,
+  description: "The U.S. government's decision to spend more money on suppressing communist forces than on extradition treaties, which are more favorable to Pablo's arrest, makes Pablo's arrest even more difficult.",
+  videoURL: exampleVideoURL
+)
+
+var allExampleEpisodes = [episode1, episode2, episode3]
+
 let exampleMovie1 = Movie(
   id: UUID().uuidString,
   name: "DARK",

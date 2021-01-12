@@ -10,6 +10,10 @@ import SwiftUI
 struct MovieDetail: View {
   var movie: Movie
   let screen = UIScreen.main.bounds
+  
+  @State private var showSeasonPicker = false
+  @State private var selectedSeason = false
+  
   var body: some View {
     ZStack {
       Color.black.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
