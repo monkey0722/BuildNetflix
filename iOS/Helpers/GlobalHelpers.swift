@@ -128,7 +128,8 @@ let exampleMovie3 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie5, exampleMovie6],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  episodes: allExampleEpisodes
   // promotionHeadline: "New episode coming soon"
 )
 let exampleMovie4 = Movie(
