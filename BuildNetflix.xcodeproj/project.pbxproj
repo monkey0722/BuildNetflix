@@ -17,6 +17,9 @@
 		0F66FD2925A9AB2E00AFF974 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66FD2825A9AB2E00AFF974 /* CustomTabSwitcher.swift */; };
 		0F69A81825AC038700732BE1 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69A81725AC038700732BE1 /* VideoPreviewImage.swift */; };
 		0F69A81E25AC060800732BE1 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69A81D25AC060800732BE1 /* TrailerList.swift */; };
+		0F72055825BC0DE400569C49 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F72055725BC0DE400569C49 /* SearchView.swift */; };
+		0F72055E25BC0E3700569C49 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F72055D25BC0E3700569C49 /* SearchVM.swift */; };
+		0F72056425BC122F00569C49 /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F72056325BC122F00569C49 /* GenerateMovies.swift */; };
 		0FA736E625B5AD5D00C78BAF /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA736E525B5AD5D00C78BAF /* HomeStack.swift */; };
 		0FA736E725B5AD5D00C78BAF /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA736E525B5AD5D00C78BAF /* HomeStack.swift */; };
 		0FABDF4C25A056BC00C29F42 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FABDF4B25A056BC00C29F42 /* KingfisherSwiftUI */; };
@@ -71,6 +74,9 @@
 		0F66FD2825A9AB2E00AFF974 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		0F69A81725AC038700732BE1 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		0F69A81D25AC060800732BE1 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		0F72055725BC0DE400569C49 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0F72055D25BC0E3700569C49 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		0F72056325BC122F00569C49 /* GenerateMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
 		0FA736E525B5AD5D00C78BAF /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		0FABDF5825A0573700C29F42 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				0FB1CA6825B9AFCE0074A785 /* SearchBar.swift */,
+				0F72055725BC0DE400569C49 /* SearchView.swift */,
+				0F72055D25BC0E3700569C49 /* SearchVM.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 				0FABDF5125A0571900C29F42 /* GlobalHelpers.swift */,
 				0FB1CA7225B9B2450074A785 /* Colors.swift */,
 				0F55131625BB047C0082018F /* ActivityIndicator.swift */,
+				0F72056325BC122F00569C49 /* GenerateMovies.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -440,9 +449,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FABDF6E25A0583D00C29F42 /* Movie.swift in Sources */,
+				0F72056425BC122F00569C49 /* GenerateMovies.swift in Sources */,
+				0F72055E25BC0E3700569C49 /* SearchVM.swift in Sources */,
 				0FB1CA7325B9B2450074A785 /* Colors.swift in Sources */,
 				0F61EBBD25ABFFB3002251E7 /* Trailer.swift in Sources */,
 				0FABDF5225A0571900C29F42 /* GlobalHelpers.swift in Sources */,
+				0F72055825BC0DE400569C49 /* SearchView.swift in Sources */,
 				0FEC33F525A026D200955AC7 /* ContentView.swift in Sources */,
 				0F69A81825AC038700732BE1 /* VideoPreviewImage.swift in Sources */,
 				0F0243BB25A5EB9600C47642 /* HomeView.swift in Sources */,

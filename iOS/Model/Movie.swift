@@ -19,8 +19,8 @@ struct Movie: Identifiable {
   var numberOfSeasons: Int?
   
   // Personalization
-  var currentEpisode: CurrentEpisodeIngo?
-  var defaultEpisodeInfo: CurrentEpisodeIngo
+  var currentEpisode: CurrentEpisodeInfo?
+  var defaultEpisodeInfo: CurrentEpisodeInfo
   var creators: String
   var cast: String
   var moreLikeThisMovies: [Movie]
@@ -60,7 +60,7 @@ struct Movie: Identifiable {
   }
 }
 
-struct CurrentEpisodeIngo: Hashable, Equatable {
+struct CurrentEpisodeInfo: Hashable, Equatable {
   var episodeName: String
   var description: String
   var season: Int
