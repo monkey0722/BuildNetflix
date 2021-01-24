@@ -33,6 +33,7 @@ struct SearchBar: View {
           .onTapGesture(perform: {
             isEditing = true
           })
+          .animation(.default)
         
         if !text.isEmpty {
           if isLoading {
@@ -51,7 +52,8 @@ struct SearchBar: View {
               Image(systemName: "xmark.circle.fill")
                 .foregroundColor(.graySearchText)
                 .frame(width: 35, height: 35)
-            }).padding(.trailing, 18)
+            })
+            .padding(.trailing, 18)
           }
         }
         
@@ -63,7 +65,10 @@ struct SearchBar: View {
           }, label: {
             Text("Cancel")
               .foregroundColor(.white)
-          }).padding(.trailing, 10)
+          })
+          .padding(.trailing, 10)
+          .transition(.move(edge: .trailing))
+          .animation(.default)
         }
       }
     }
