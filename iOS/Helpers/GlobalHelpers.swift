@@ -175,7 +175,7 @@ let exampleMovie6 = Movie(
   trailers: exampleTrailers
 )
 
-let exampleEpisodeInfo1 = CurrentEpisodeIngo(
+let exampleEpisodeInfo1 = CurrentEpisodeInfo(
   episodeName: "Alice in the Land of the Rising Sun",
   description: "Ryohei Arisu hides in a public restroom with two of his friends to avoid detection by the police. However, when they get out, they find the empty streets of Tokyo.",
   season: 2,
@@ -200,5 +200,16 @@ extension String {
     let fontAttributes = [NSAttributedString.Key.font: font]
     let size = self.size(withAttributes: fontAttributes)
     return size.width
+  }
+}
+
+extension View {
+  func hideKeyboard() {
+    UIApplication.shared.sendAction(
+      #selector(UIResponder.resignFirstResponder),
+      to: nil,
+      from: nil,
+      for: nil
+    )
   }
 }
