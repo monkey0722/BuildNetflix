@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F0243BB25A5EB9600C47642 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0243BA25A5EB9600C47642 /* HomeView.swift */; };
+		0F05A0B425C18051007E6BE5 /* ComingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A0B325C18051007E6BE5 /* ComingSoon.swift */; };
+		0F05A0B525C18051007E6BE5 /* ComingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A0B325C18051007E6BE5 /* ComingSoon.swift */; };
+		0F05A0CB25C180EB007E6BE5 /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A0CA25C180EB007E6BE5 /* NotificationBar.swift */; };
+		0F05A0CC25C180EB007E6BE5 /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A0CA25C180EB007E6BE5 /* NotificationBar.swift */; };
 		0F13D83A25ADBE3700127713 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F13D83925ADBE3700127713 /* EpisodeView.swift */; };
 		0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
 		0F45861B25A739D400041E95 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F45861A25A739D400041E95 /* MovieDetail.swift */; };
+		0F47ED1A25C19C0F00F80787 /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F47ED1925C19C0F00F80787 /* ComingSoonRow.swift */; };
+		0F47ED1B25C19C0F00F80787 /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F47ED1925C19C0F00F80787 /* ComingSoonRow.swift */; };
 		0F55131725BB047C0082018F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55131625BB047C0082018F /* ActivityIndicator.swift */; };
 		0F61EBBD25ABFFB3002251E7 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61EBBC25ABFFB3002251E7 /* Trailer.swift */; };
 		0F61EBC425AC00F1002251E7 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61EBC325AC00F1002251E7 /* SwiftUIVideoView.swift */; };
@@ -67,9 +73,12 @@
 
 /* Begin PBXFileReference section */
 		0F0243BA25A5EB9600C47642 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0F05A0B325C18051007E6BE5 /* ComingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoon.swift; sourceTree = "<group>"; };
+		0F05A0CA25C180EB007E6BE5 /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
 		0F13D83925ADBE3700127713 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		0F45861A25A739D400041E95 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		0F47ED1925C19C0F00F80787 /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
 		0F55131625BB047C0082018F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		0F61EBBC25ABFFB3002251E7 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		0F61EBC325AC00F1002251E7 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
@@ -141,6 +150,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F05A0BA25C18097007E6BE5 /* ComingSoon */ = {
+			isa = PBXGroup;
+			children = (
+				0F05A0B325C18051007E6BE5 /* ComingSoon.swift */,
+				0F47ED1925C19C0F00F80787 /* ComingSoonRow.swift */,
+				0F05A0CA25C180EB007E6BE5 /* NotificationBar.swift */,
+			);
+			path = ComingSoon;
+			sourceTree = "<group>";
+		};
 		0F4C013C25AB694B0033FD32 /* MovieDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +229,7 @@
 			children = (
 				0FEC33C925A026D100955AC7 /* Shared */,
 				0FEC33D325A026D200955AC7 /* iOS */,
+				0F05A0BA25C18097007E6BE5 /* ComingSoon */,
 				0FEC33DA25A026D200955AC7 /* macOS */,
 				0FEC33E425A026D200955AC7 /* Tests iOS */,
 				0FEC33EF25A026D200955AC7 /* Tests macOS */,
@@ -458,8 +478,10 @@
 				0FABDF6E25A0583D00C29F42 /* Movie.swift in Sources */,
 				0F72056425BC122F00569C49 /* GenerateMovies.swift in Sources */,
 				0F72055E25BC0E3700569C49 /* SearchVM.swift in Sources */,
+				0F05A0CB25C180EB007E6BE5 /* NotificationBar.swift in Sources */,
 				0FB1CA7325B9B2450074A785 /* Colors.swift in Sources */,
 				0F61EBBD25ABFFB3002251E7 /* Trailer.swift in Sources */,
+				0F05A0B425C18051007E6BE5 /* ComingSoon.swift in Sources */,
 				0FABDF5225A0571900C29F42 /* GlobalHelpers.swift in Sources */,
 				0F72055825BC0DE400569C49 /* SearchView.swift in Sources */,
 				0F74D6D525BFDFCD003C621E /* SearchResultsGrid.swift in Sources */,
@@ -476,6 +498,7 @@
 				0FFEE24725AC184800FDDD38 /* PlayButton.swift in Sources */,
 				0FA736E625B5AD5D00C78BAF /* HomeStack.swift in Sources */,
 				0FB1CA6925B9AFCE0074A785 /* SearchBar.swift in Sources */,
+				0F47ED1A25C19C0F00F80787 /* ComingSoonRow.swift in Sources */,
 				0F66FD2925A9AB2E00AFF974 /* CustomTabSwitcher.swift in Sources */,
 				0F69A81E25AC060800732BE1 /* TrailerList.swift in Sources */,
 				0FD676AA25A1B872001689D9 /* SmallVerticalButton.swift in Sources */,
@@ -489,11 +512,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F05A0B525C18051007E6BE5 /* ComingSoon.swift in Sources */,
 				0FABDF5325A0571900C29F42 /* GlobalHelpers.swift in Sources */,
 				0FEC33F625A026D200955AC7 /* ContentView.swift in Sources */,
 				0FEC33F425A026D200955AC7 /* BuildNetflixApp.swift in Sources */,
+				0F05A0CC25C180EB007E6BE5 /* NotificationBar.swift in Sources */,
 				0FB2196025AC225900AEBD8D /* HomeView.swift in Sources */,
 				0FABDF5A25A0573700C29F42 /* HomeVM.swift in Sources */,
+				0F47ED1B25C19C0F00F80787 /* ComingSoonRow.swift in Sources */,
 				0FA736E725B5AD5D00C78BAF /* HomeStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
