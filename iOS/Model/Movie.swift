@@ -26,6 +26,9 @@ struct Movie: Identifiable {
   var moreLikeThisMovies: [Movie]
   var trailers: [Trailer]
   
+  var previewImageName: String
+  var previewVideoURL: URL?
+  
   var episodes: [Episode]?
   var movieType: MovieType {
     return episodes == nil ? .movie : .tvShow

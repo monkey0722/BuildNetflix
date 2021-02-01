@@ -100,7 +100,9 @@ let exampleMovie1 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "darkPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie2 = Movie(
   id: UUID().uuidString,
@@ -114,7 +116,9 @@ let exampleMovie2 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "ozarkPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie3 = Movie(
   id: UUID().uuidString,
@@ -129,6 +133,8 @@ let exampleMovie3 = Movie(
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie5, exampleMovie6],
   trailers: exampleTrailers,
+  previewImageName: "dirtyJohnPreview",
+  previewVideoURL: exampleVideoURL,
   episodes: allExampleEpisodes
   // promotionHeadline: "New episode coming soon"
 )
@@ -144,7 +150,9 @@ let exampleMovie4 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "travelersPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie5 = Movie(
   id: UUID().uuidString,
@@ -158,7 +166,9 @@ let exampleMovie5 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie6],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "arrestedDevPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie6 = Movie(
   id: UUID().uuidString,
@@ -172,7 +182,9 @@ let exampleMovie6 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "whiteLinesPreview",
+  previewVideoURL: exampleVideoURL
 )
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(
