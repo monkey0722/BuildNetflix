@@ -17,6 +17,7 @@
 		0F3A3F7B25A1AE7300ED4BC4 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */; };
 		0F45861B25A739D400041E95 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F45861A25A739D400041E95 /* MovieDetail.swift */; };
 		0F55131725BB047C0082018F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55131625BB047C0082018F /* ActivityIndicator.swift */; };
+		0F5D21CD25CA2F8B00DD3319 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5D21CC25CA2F8B00DD3319 /* PagerView.swift */; };
 		0F61EBBD25ABFFB3002251E7 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61EBBC25ABFFB3002251E7 /* Trailer.swift */; };
 		0F61EBC425AC00F1002251E7 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61EBC325AC00F1002251E7 /* SwiftUIVideoView.swift */; };
 		0F66FD2925A9AB2E00AFF974 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66FD2825A9AB2E00AFF974 /* CustomTabSwitcher.swift */; };
@@ -84,6 +85,7 @@
 		0F3A3F7A25A1AE7300ED4BC4 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		0F45861A25A739D400041E95 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		0F55131625BB047C0082018F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		0F5D21CC25CA2F8B00DD3319 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		0F61EBBC25ABFFB3002251E7 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		0F61EBC325AC00F1002251E7 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		0F66FD2825A9AB2E00AFF974 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				0FA7C4B925C82D97006A4C9C /* MoviePreviewCell.swift */,
 				0F874DEC25C973830014720B /* MoviePreviewRow.swift */,
+				0F5D21CC25CA2F8B00DD3319 /* PagerView.swift */,
 			);
 			path = MoviePreview;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF858C425BEF48E00F2CB5E /* PopularMovieView.swift in Sources */,
+				0F5D21CD25CA2F8B00DD3319 /* PagerView.swift in Sources */,
 				0FABDF6E25A0583D00C29F42 /* Movie.swift in Sources */,
 				0FC0744325C67222007DCAAA /* DownloadsView.swift in Sources */,
 				0F72056425BC122F00569C49 /* GenerateMovies.swift in Sources */,
