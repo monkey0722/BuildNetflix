@@ -101,6 +101,7 @@ let exampleMovie1 = Movie(
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
   trailers: exampleTrailers,
+  accentColor: Color.blue,
   previewImageName: "darkPreview",
   previewVideoURL: exampleVideoURL
 )
