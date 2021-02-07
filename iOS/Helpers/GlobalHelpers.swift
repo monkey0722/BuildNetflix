@@ -196,7 +196,7 @@ let exampleEpisodeInfo1 = CurrentEpisodeInfo(
 )
 
 var exampleMovies: [Movie] {
-  return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+  return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
 }
 
 extension LinearGradient {
