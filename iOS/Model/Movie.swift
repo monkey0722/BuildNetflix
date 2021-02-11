@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Movie: Identifiable {
   var id: String
@@ -25,6 +26,10 @@ struct Movie: Identifiable {
   var cast: String
   var moreLikeThisMovies: [Movie]
   var trailers: [Trailer]
+  
+  var accentColor: Color? = .white
+  var previewImageName: String
+  var previewVideoURL: URL?
   
   var episodes: [Episode]?
   var movieType: MovieType {

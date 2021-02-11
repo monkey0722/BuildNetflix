@@ -44,7 +44,7 @@ struct SearchBar: View {
               ActivityIndicator(style: .medium, animate: .constant(true))
                 .configure { $0.color = .white }
             })
-            .padding(.trailing, 32)
+            .padding(.trailing, 16)
             .frame(width: 35, height: 35)
           } else {
             Button(action: {
@@ -54,7 +54,7 @@ struct SearchBar: View {
                 .foregroundColor(.graySearchText)
                 .frame(width: 35, height: 35)
             })
-            .padding(.trailing, 18)
+            .padding(.trailing, 8)
           }
         }
         

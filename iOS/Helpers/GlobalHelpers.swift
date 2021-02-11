@@ -100,7 +100,10 @@ let exampleMovie1 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  accentColor: Color.blue,
+  previewImageName: "darkPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie2 = Movie(
   id: UUID().uuidString,
@@ -114,7 +117,9 @@ let exampleMovie2 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "ozarkPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie3 = Movie(
   id: UUID().uuidString,
@@ -129,6 +134,8 @@ let exampleMovie3 = Movie(
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie5, exampleMovie6],
   trailers: exampleTrailers,
+  previewImageName: "dirtyJohnPreview",
+  previewVideoURL: exampleVideoURL,
   episodes: allExampleEpisodes
   // promotionHeadline: "New episode coming soon"
 )
@@ -144,7 +151,9 @@ let exampleMovie4 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "travelersPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie5 = Movie(
   id: UUID().uuidString,
@@ -158,7 +167,9 @@ let exampleMovie5 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [exampleMovie1, exampleMovie2, exampleMovie4, exampleMovie6],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "arrestedDevPreview",
+  previewVideoURL: exampleVideoURL
 )
 let exampleMovie6 = Movie(
   id: UUID().uuidString,
@@ -172,7 +183,9 @@ let exampleMovie6 = Movie(
   creators: "Baran bo Odan, Jantje Friese",
   cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
   moreLikeThisMovies: [],
-  trailers: exampleTrailers
+  trailers: exampleTrailers,
+  previewImageName: "whiteLinesPreview",
+  previewVideoURL: exampleVideoURL
 )
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(
@@ -183,7 +196,7 @@ let exampleEpisodeInfo1 = CurrentEpisodeInfo(
 )
 
 var exampleMovies: [Movie] {
-  return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+  return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
 }
 
 extension LinearGradient {
@@ -211,5 +224,32 @@ extension View {
       from: nil,
       for: nil
     )
+  }
+}
+
+
+extension View {
+  /// Hide or show the view based on a boolean value.
+  /// Example for visibility:
+  /// ```
+  /// Text("Label")
+  ///     .isHidden(true)
+  /// ```
+  /// Example for complete removal:
+  /// ```
+  /// Text("Label")
+  ///     .isHidden(true, remove: true)
+  /// ```
+  /// - Parameters:
+  ///   - hidden: Set to `false` to show the view. Set to `true` to hide the view.
+  ///   - remove: Boolean value indicating whether or not to remove the view.
+  @ViewBuilder func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
+    if hidden {
+      if !remove {
+        self.hidden()
+      }
+    } else {
+      self
+    }
   }
 }

@@ -75,7 +75,7 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
       Color.black.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
       CustomTabSwitcher(
         tabs: [.episodes, .trailers, .more],
-        movie: exampleMovie3,
+        movie: exampleMovie1,
         showSeasonPicker: .constant(false),
         selectedSeason: .constant(1)
       )
